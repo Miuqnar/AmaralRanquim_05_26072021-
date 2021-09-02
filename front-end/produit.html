@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prduit</title>
+
+    <!--link font-awesome-->
+    <script src="https://kit.fontawesome.com/b9bfbde8be.js" crossorigin="anonymous"></script>
+
+    <!--links bootstrap, css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script -->
+
+    <script defer src="js/script.js"></script>
+    <script defer src="node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- end -->
+
+</head>
+<body onload="recupererProduit()">
+
+    <!--section header navigation-->
+
+    <div class="container-fluid bg-dark">
+        <div class="container header">
+            <div class="row">
+                <nav class="col navbar navbar-expand-md navbar-dark align-content-center">
+                    <a class="navbar-brand" href="index.html">
+                       <span class="logo"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                    </a>
+                    <button 
+                        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-label="toggle-navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav fs-5 text-center">
+                            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Produit</a></li>
+                            <li class="nav-item"><a href="panier.html" class="nav-link">Panier</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+   <!--end-->
+
+   <!--section main-->
+
+   <section class="bgProduit">
+       <div class="container">
+           <div class="vd-bg">
+            <div class="video-wrap">
+                <div id="videoPorduit">
+                    <video class="" autoplay muted loop playsinline>
+                        <source src="video/vd.mp4" type="video/mp4">
+                        <source src="video/vd.WebM" type="video/WebM">
+                        <source src="video/vd.ogv" type="video/ogg">
+                        <source src="video/vd.wmv" type="video/wmv">
+                    </video>
+                </div>
+            </div>
+               <h2 class="fs-5 pdruitH2">Veuillez choisir votre lentille, orinoco vous offre des lentilles de haute qualité, n'hésitez pas à nous contacter si vous avez des questions.</h2>
+           </div>
+       </div>
+       <div class="container pt-5 pb-5" id="product_detail"></div>
+    <!-- <div class="container_confirm">
+        <div class="confirmAJoutPanier">Produit ajouté au panier</div>
+    </div> -->
+   </section>
+
+   <!--end-->
+
+
+   <!-- footer -->
+
+    <footer class="bg pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 header">
+                    <a class="btn " href="index.html">
+                        <span class="logo orinico"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-4  fs-5">
+                    <span class="">(+33) 7 30 00 26 00</span>
+                    <div class="pt-2"><span>orinico@cont.com</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end -->
+
+</body>
+</html>

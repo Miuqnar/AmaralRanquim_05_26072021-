@@ -1,0 +1,20 @@
+
+
+.header{
+    font-family: 'Lobster Two', sans-serif;
+    .logo{
+        font-size: 35px;
+        i:first-child{
+            font-size: 35px;
+            margin-right: 10px;
+            transform: scale(1);
+            background: -webkit-linear-gradient($colourprimery, $coloursecondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+

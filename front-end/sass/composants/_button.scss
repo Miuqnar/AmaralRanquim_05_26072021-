@@ -1,0 +1,44 @@
+
+.btn-outline-warning{
+    font-size: 16px;
+    color: #F3F1CE;
+    &:hover{
+        background: #352a0d;
+        color: #ffffff;
+    }
+    i:first-child{
+        padding: 0 12px;
+    }
+    i:last-child{
+        padding: 0 12px;
+    }
+}
+.btn-warning{
+    background: #49330b;
+    color: #F3F1CE;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 1rem;
+    &:hover{
+        background: #352a0d;
+        color: #F3F1CE;
+    }
+    i:first-child{
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    i:last-child{
+        padding: 0 10px;
+        font-size: 16px;
+    }
+}
+
+#trash-article{
+    cursor: pointer;
+    outline: none;
+    padding: 4px;
+}
+
+#options{
+    cursor: pointer;
+}

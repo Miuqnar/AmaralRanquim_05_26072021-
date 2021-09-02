@@ -1,0 +1,31 @@
+
+// bootstrap 
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// utils
+
+@import 
+   "utils/variables";
+
+// base
+
+@import
+   "base/base";
+
+@import 
+   "composants/button";
+
+// layouts
+
+@import
+   "layouts/form",
+   "layouts/footer",
+   "layouts/header";
+
+// pages
+
+@import 
+   "pages/home";
+
+

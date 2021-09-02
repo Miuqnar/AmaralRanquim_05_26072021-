@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prduit</title>
+
+    <!--link font-awesome-->
+    <script src="https://kit.fontawesome.com/b9bfbde8be.js" crossorigin="anonymous"></script>
+
+    <!--links bootstrap, css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script -->
+
+    <script defer src="js/script.js"></script>
+    <script defer src="node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- end -->
+
+</head>
+<body onload="affichePanier()">
+
+    <!--section header navigation-->
+
+    <div class="container-fluid bg-dark">
+        <div class="container header">
+            <div class="row">
+                <nav class="col navbar navbar-expand-md navbar-dark align-content-center">
+                    <a class="navbar-brand" href="index.html">
+                       <span class="logo"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                    </a>
+                    <button 
+                        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-label="toggle-navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav fs-5 text-center">
+                            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Produit</a></li>
+                            <li class="nav-item"><a href="panier.html" class="nav-link">Panier</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+   <!--end-->
+
+   <!-- section comander -->
+
+   <section class="bgProduit">
+       <div class="container pt-5 pb-5">
+           <div class="row g-4" id="panier_Detaille">
+                <div class="col-md">
+                    <div class="bg-dark text-white text-center p-3" style="border-radius: 25px;" id="containerPanier">
+                        <h3 class="p-4">Votre panier</h3>
+                        <div class="row border-top  border-bottom pt-3">
+                            <div class="col-5" id="product_id_name" style="padding-right: 5rem;">
+                                <p>Article</p>
+                            </div>
+                            <div class="col-4" id="product_id_lentille">
+                                <p>Lentilles</p>
+                            </div>
+                            <div class="col-1" id="product_id_prix" >
+                                <p class="trash-body">Prix</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md" id="container_form">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="pt-4 text-center">Adresse de livraison</h3>
+
+                            <form method="POST" class="row" id="formComand">
+
+                                <div class="col-md-6">
+
+                                    <div class="col-md formControl">
+                                        <label for="nom"></label>
+                                        <input type="text" name="nom" id="nom" placeholder="Nom" required pattern="^[a-zA-Z\s]+$">
+                                        <small></small>
+                                        <div class="error" id="nomErr"></div>
+                                       
+                                    </div>
+
+                                    <div class="col-md formControl">
+                                        <label for="prenom"></label>
+                                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required pattern="^[a-zA-Z\s]+$">
+                                        <div class="error" id="prenomErr"></div>
+                                        <small></small>
+                                    </div>
+
+                                    <div class="col-md formControl">
+                                        <label for="email"></label>
+                                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                                        <div class="error" id="emailErr"></div>
+                                        <small></small>
+                                    </div>
+
+                                    <div class="col-md formCoamand">
+                                        <label for="adresse"></label>
+                                        <input type="text" name="adresse" id="adresse" placeholder="adresse" required>
+                                        <div class="error" id="adresseErr"></div>
+                                        <small></small>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="col-md formCoamand">
+                                        <label for="ville"></label>
+                                        <input type="text" name="ville" id="ville" placeholder="Ville" required>
+                                        <div class="error" id="villeErr"></div>
+                                        <small></small>
+                                    </div>
+
+                                    <div class="col-md formControl">
+                                        <label for="codePostal"></label>
+                                        <input type="number" name="codePostal" id="codePostal" placeholder="Code postal" required>
+                                        <div class="error" id="codePostalErr"></div>
+                                        <small></small>
+                                    </div>
+
+                                </div>
+                                <div class="d-block mx-auto p-3 text-center"><button type="button" class="btn btn btn-warning border-0 btn-lg" id="valiteCommand" onclick="formButton()"><i class="fas fa-arrow-right"></i> Valider <i class="fas fa-arrow-left"></i></button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </section>
+
+<!-- end -->
+
+ <!-- footer -->
+
+    <footer class="bg pb-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 header">
+                    <a class="btn " href="index.html">
+                        <span class="logo orinico"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                    </a>
+                </div>
+                <div class="col-md-3 pt-4  fs-5">
+                    <span class="">(+33) 7 30 00 26 00</span>
+                    <div class="pt-2"><span>orinico@cont.com</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- end -->
+</body>
+</html>
