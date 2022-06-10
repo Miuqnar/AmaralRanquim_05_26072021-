@@ -1,14 +1,3 @@
-
-// recuperer le nombre dans le localStorage
-// let shopIcon  = document.querySelector("#shopIcon");
-// let qt = localStorage.getItem('cartNumbers')
-
-// if(qt){
-//     shopIcon.textContent = qt;
-// }else{
-//     shopIcon.textContent = 0;
-// }
-
 // recupere la copie de produit
 let cart = JSON.parse(localStorage.getItem('addCart'));
 

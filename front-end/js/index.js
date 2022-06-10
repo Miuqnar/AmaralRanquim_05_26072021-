@@ -1,17 +1,3 @@
-
-// ajouter le nombre dans le localStorage
-
-// let shopIcon  = document.querySelector("#shopIcon");
-// let qt = localStorage.getItem('cartNumbers')
-
-// if(qt){
-//     shopIcon.textContent = qt;
-// }else{
-//     shopIcon.textContent = 0;
-// }
-
-
-
 // Envoie d'une requête du type get avec fetch , (recupererProduits)///page d'acceuil //
 
 function produits() {
@@ -29,8 +15,6 @@ function produits() {
             cardBody_image.classList.add('cardBody_image')
             
             let pct_image = document.createElement('img');
-            // let pctLastIndex = document.createElement('imge');
-            // pctLastIndex.classList.add('imge');
             pct_image.classList.add('imge');
             pct_image.src = articles[i].imageUrl;
             cardBody_image.appendChild(pct_image);
