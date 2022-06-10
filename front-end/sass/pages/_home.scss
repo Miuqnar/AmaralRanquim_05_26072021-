@@ -1,39 +1,16 @@
 
+/********************************* produits | accueil page 1 ***********************************/
 
-body{
-    overflow-x: hidden;
-    letter-spacing: 1.5px;
-    font-family: 'Roboto', sans-serif;
-}
-
-// page d'accueil
-
-.video-background{
-    position: relative;
-    margin-top: -6rem;
-    overflow: hidden;
+.imgaBg{
+    margin-top: -220px;
+    background: url('../images/camera.jpg') top no-repeat;
     width: 100%;
-    height: 104vh;
-    z-index: -1;
-    &::before{
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: #181818a9;
-    }
-    video{
-        position: absolute;
-        width: 100%;
-        height: 104vh;
-        object-fit: cover;
-        z-index: -2;
-    }
+    height: 90vh;
 }
 .caption{
-    position: absolute;
+    position: relative;
     font-family: 'Lobster', sans-serif;
-    top: 36%;
+    top: 300px;
     width: 100%;
     h4{
         max-width: 50%;
@@ -42,73 +19,86 @@ body{
     }
 }
 
-// produit h2 accueil page 1
-
 .produit{
     font-family: 'Lobster', sans-serif;
 }
-.textPrix{
-    color: #F3F1CE;
-}
-// card
-.card{
-    border-radius: 22px;
-    background: #634d10;
-    color: #ffffff;
-    transform: scale(1);
-    transition: transform 200ms;
-    &:hover{
-        transform: scale(1.02);
+.all_products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 40px;
+    .cardBody{
+        flex: 1 220px;
+        color: #000;
+        background: #ffffff;
+        // box-shadow: 4px 2px 2px #888888;
+        border-radius: 10px;
+        box-shadow: 4px 2px 2px #c7c7c7;
+        overflow: hidden;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 #1f1f1f;
+        }
+        &:hover img{
+            transform: scale(1.2);
+        }
+        &_image{
+            // width: 100%;
+            overflow: hidden;
+            img{
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+                max-height: 190px;
+                object-fit: cover;
+                object-position: left center;
+                transition: all .4s ease-in-out;
+                cursor:pointer;
+            }
+        }
+        &_pct_infos{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 20px 15px;
+        }
+        &_buttonContainer{
+            display: flex;
+            justify-content: center;
+            padding: 0 0 22px;
+            &-buttonItem{
+                border: 1px solid #e2e2e2;
+                border-radius: 6px;
+                padding: 8px 20px;
+                background: #e2e2e2;
+                transition: all .4s ease;
+                cursor: pointer;
+                &:hover{
+                    background: #fff;
+                    border: 1px solid #969696 ;
+                }
+                &_buttonLink{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+        }
     }
-    img{
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-        object-fit: cover;
-    }
 }
+@include only_table; 
+@include only_phone;   
 
-//section produit detaille page 3
 
-.img-produit{
-    border-radius: 20px 20px 20px 20px;
-    width: 100%;
-}
-.pdruitH2{
-    margin-top: 2rem;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-.vd-bg{
-    position: relative;
-    margin-top: 4rem;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 100%;
-    z-index: -15;
-    &::before{
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: #181818a9;
-        z-index: -6;
-    }
-    video{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -8;
-    }
-}
-// section confirmation page 4
-.confirmBg{
-    position: fixed;
-    padding-top: 10rem;
-    // background-: url('../../images/vcam_3.jpg');
-    background: #181818;
-    color: white;
-    height: 100%;
-    width: 100%;
-}
+// // section confirmation page 4
+// .confirmBg{
+//     position: fixed;
+//     padding-top: 10rem;
+//     // background-: url('../../images/vcam_3.jpg');
+//     background: #181818;
+//     color: white;
+//     height: 100%;
+//     width: 100%;
+// }

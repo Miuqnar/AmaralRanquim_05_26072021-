@@ -1,16 +1,45 @@
 
 // formulaire de validation
-
-form{
-    input{
-        border: none;
-        border-radius: 8px;
-        outline: none;
-        padding: .5rem 1.5rem;
-    }
-    .error {
-        color: red;
-        font-size: 90%;
+.containerComand{
+    max-width: 500px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    &_form{
+        margin-top: 2.5rem;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 4px 2px 2px #c7c7c7;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: scale(0.98);
+            box-shadow: 0 0 0 0 #1f1f1f;
+        }
+        input{
+            border: none;
+            outline: none;
+            padding: .5rem 1.5rem;
+            border-bottom: 1px solid #000;
+        }
+        .error {
+            color: red;
+            font-size: 90%;
+        }
+        
     }
 }
-
+.btnComand{
+    display: flex;
+    justify-content: center;
+    button{
+        width: 100px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

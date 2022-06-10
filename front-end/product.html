@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prduit</title>
+
+    <!--link font-awesome-->
+    <script src="https://kit.fontawesome.com/b9bfbde8be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--links bootstrap, css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- script -->
+    <script defer src="js/product.js"></script>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- end -->
+
+</head>
+<body class="bdProduct">
+    
+    <!--section header navigation-->
+
+    <!--section header navigation-->
+
+    <div class="shadow">
+        <header class="container-lg header">
+            <nav class="col navbar navbar-expand-sm navbar-light align-content-center">
+                <a class="navbar-brand" href="index.html">
+                    <span class="logo"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                </a>
+                <button 
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-label="toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5 text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Produits</a></li>
+                        <li class="nav-item"><a href="cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+<!--end-->
+
+   <!--section main-->
+
+   <main class="sectionProduit container">
+
+       <h1 class="sectionProduit_titre">Veuillez choisir votre lentille, orinoco vous offre des lentilles de haute qualité, n'hésitez pas à nous contacter si vous avez des questions.</h1>
+       <p class="text-center mt-4 fs-6">Nous avons une très bonne promotion de sur chaque produit acheté 15%</p>
+
+       <div class="popAddProductContainer">
+           <div class="popAddProductContainer_popAddProduct"></div>
+       </div>
+
+       <article class="product container">
+           <div class="product_items">
+
+                <div class="getItem">
+                    <img src="" alt=""  class="getItem_image">
+                    <div class="px-2">
+                        <p class="nameProduct pt-3"></p>
+                        <div class="containerQuantity d-flex justify-content-between">
+                            <div class="info">
+                                <p class="priceProduct  btn btn-info"></p>
+                            </div>
+                            <div class="w-25">
+                                <select id="quantity" class="form-select">
+                                    <!-- <option value="">Qty</option> -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <select id="options" class="form-select mb-4 description_selectOptions">
+                            <!-- <option value="lentilles">Lentilles</option> -->
+                            <!-- <option value=""></option> -->
+                        </select>
+                        <div class="text-center pt-4" id="clickPanier">
+                            <button type="button" class="btn btn-dark" id="addToCart"><span>Acheter</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+       </article>
+   </main>
+
+   <!--end-->
+
+   <!-- footer -->
+
+    <footer class="bg pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 header">
+                    <!-- <a class="btn " href="index.html">
+                        <span class="logo orinico"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                    </a> -->
+                </div>
+                <div class="col-md-3 pt-4  fs-5">
+                    <span class="">(+33) 7 30 00 26 00</span>
+                    <div class="pt-2"><span>orinico@cont.com</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end -->
+
+</body>
+</html>

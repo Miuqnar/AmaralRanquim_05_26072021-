@@ -3,14 +3,17 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
 // utils
 
 @import 
+   "utils/mixins",
    "utils/variables";
 
 // base
 
 @import
+   "base/animation",
    "base/base";
 
 @import 
@@ -25,7 +28,10 @@
 
 // pages
 
-@import 
-   "pages/home";
+@import
+   "pages/cart",
+   "pages/confirm",
+   "pages/home",
+   "pages/product";
 
 

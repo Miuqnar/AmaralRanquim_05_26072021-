@@ -1,0 +1,36 @@
+
+
+.shoppingCart{
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px #c7c7c7;
+    transform: scale(1);
+    transition: all .4s ease-in-out;
+    padding: 3px;
+    &:hover{
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 #1f1f1f;
+    }
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+}
+.infoArt{
+    color: #1caa00 ;
+}
+.deleteArticle_p{
+    padding-bottom: 24px;
+}
+.paragraphIcon{
+    color: red;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .4s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

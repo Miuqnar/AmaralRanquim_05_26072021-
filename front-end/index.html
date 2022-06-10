@@ -12,14 +12,16 @@
 
     <!--link font-awesome-->
     <script src="https://kit.fontawesome.com/b9bfbde8be.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
     <!--links bootstrap, css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- script -->
 
-    <script defer src="js/script.js"></script>
+    <script defer src="js/index.js"></script>
+    <!-- <script defer src="js/product.js"></script> -->
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- end -->
@@ -27,58 +29,46 @@
 
 </head>
 
-<body class="bg-dark" onload="recupererProduits();">
+<body>
 
     <!--section header navigation-->
 
-        <div class="container-lg header">
-            <div class="row">
-                <nav class="col navbar navbar-expand-md navbar-dark align-content-center">
-                    <a class="navbar-brand" href="index.html">
-                       <span class="logo"><i class="fas fa-shopping-cart"></i>Orinoco</span>
-                    </a>
-                    <button 
-                        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                        aria-label="toggle-navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                        <ul class="navbar-nav fs-5 text-center">
-                            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Produit</a></li>
-                            <li class="nav-item"><a href="panier.html" class="nav-link">Panier</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    
+        <header class="container-lg header">
+            <nav class="col navbar navbar-expand-sm navbar-dark align-content-center">
+                <a class="navbar-brand" href="index.html">
+                    <span class="logo"><i class="fas fa-shopping-cart"></i>Orinoco</span>
+                </a>
+                <button 
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-label="toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5 text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Produits</a></li>
+                        <li class="nav-item"><a href="cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
     <!--end-->
 
     <!--section-->
-    <div class="video-background ">
-        <div class="video-wrap">
-            <div id="video">
-                <video class="" autoplay muted loop playsinline>
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.WebM" type="video/WebM">
-                    <source src="video/video.ogv" type="video/ogg">
-                    <source src="video/video.wmv" type="video/wmv">
-                </video>
-            </div>
+    <div class="imgaBg">
+        <div class="caption text-white  text-center">
+            <h1>Avec Orinoco decouvrez nos produits</h1>
+            <h4>Profitez de nos meilleurs produits et faites votre choix, orinoco est à votre service</h4>
         </div>
     </div>
-    <div class="caption text-white text-center">
-        <h1>Avec Orinoco decouvrez nos produits</h1>
-        <h4>Profitez de nos meilleurs produits et faites votre choix, orinoco est à votre service</h4>
-    </div>
-            
+              
     <!--end-->
 
     <!--section photo-->
 
-    <main class="container  pt-5 pb-5">
-        <h2 class="pb-5 text-white text-center produit">Nos produits</h2>
-        <div class="row row-cols-md-3 g-4" id="tous_les_photos"></div>
+    <main class="container  pt-5 pb-5 getContainer">
+        <h2 class="pb-5 text-center produit">Nos produits</h2>
+        <div class="all_products"></div>
     </main>
     
     <!--end-->
@@ -87,9 +77,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 header">
-                    <a class="btn " href="index.html">
+                    <!-- <a class="btn " href="index.html">
                         <span class="logo orinico"><i class="fas fa-shopping-cart"></i>Orinoco</span>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="col-md-3 pt-4  fs-5">
                     <span class="">(+33) 7 30 00 26 00</span>

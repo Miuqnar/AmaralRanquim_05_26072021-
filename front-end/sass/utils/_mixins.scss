@@ -1,0 +1,16 @@
+
+@mixin only_table {
+    @media screen and (max-width: 912px) {
+        .all_products{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@mixin only_phone {
+    @media screen and (max-width: 540px) {
+        .all_products{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

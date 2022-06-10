@@ -1,0 +1,86 @@
+
+
+/*************************** produit detaille page 2 *************************/
+
+.bdProduct{
+    .sectionProduit{
+        &_titre{
+            margin-top: 80px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .product{
+            margin-top: 10%;
+            margin-bottom: 10%;
+            max-width: 420px;
+            .getItem{
+                color: #000;
+                // background: #313132;
+                background: #fff;
+                border-radius: 10px;
+                // box-shadow: 4px 4px 4px #454444;
+                box-shadow: 4px 2px 2px #c7c7c7;
+                transform: scale(1);
+                transition: all .4s ease-in-out;
+                padding: 3px;
+                &:hover{
+                    transform: scale(0.98);
+                    box-shadow: 0 0 0 0 #1f1f1f;
+                }
+                &_image{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px 10px 0 0;
+                    border: 2px solid #8c8c8c;
+
+
+                }
+            }
+            .description{
+                padding: 30px;
+                color: #e7e7e7;
+                border-radius: 0 0 10px 10px;
+                // background: #6c757d;
+                text-align: left;
+                &_selectOptions{
+                    max-width: 150px;
+                    margin: auto auto auto;
+                }
+            }
+        }
+    }
+}
+.popAddProductContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_popAddProduct{
+        position: fixed;
+        top: -10rem;
+        color: #454444;
+        font-size: 16px;
+        width: 250px;
+        height: 100px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px #7a7a7a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s ease-in-out;
+        text-align: center;
+        z-index: 1;
+    }
+    &_popAddProduct.show{
+        top: 10rem;
+    }
+}
+#addToCart{
+    transform: scale(1);
+    transition: all .4s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+// #1f1f1f
+// #6c757d
